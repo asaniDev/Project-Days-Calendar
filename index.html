@@ -3,9 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="A calendar displaying commemorative days throughout the year."
+    />
+
     <script type="module" src="common.mjs"></script>
     <script type="module" src="script.mjs"></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Days Calendar</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <header>
+        <h1>Commemorative Days Calendar</h1>
+      </header>
+
+      <section aria-labelledby="calendar-heading">
+        <h2 id="calendar-heading">Calendar</h2>
+        <p id="current-month-year"></p>
+
+        <div class="calendar-controls">
+          <button type="button" id="previous-month">Previous month</button>
+
+          <div>
+            <label for="month-select">Month</label>
+            <select id="month-select"></select>
+          </div>
+
+          <div>
+            <label for="year-select">Year</label>
+            <select id="year-select"></select>
+          </div>
+
+          <button type="button" id="next-month">Next month</button>
+        </div>
+        <div id="calendar-container">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Sunday</th>
+                <th scope="col">Monday</th>
+                <th scope="col">Tuesday</th>
+                <th scope="col">Wednesday</th>
+                <th scope="col">Thursday</th>
+                <th scope="col">Friday</th>
+                <th scope="col">Saturday</th>
+              </tr>
+            </thead>
+
+            <tbody id="calendar-body"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

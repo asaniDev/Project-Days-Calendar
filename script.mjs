@@ -1,3 +1,10 @@
+
+import {
+  getFirstDay,
+  getDaysInMonth,
+  getNumberOfWeeks,
+} from "./common.mjs";
+
 const state = {
   selectedMonth: new Date().getMonth(), //get the current month
   selectedYear: new Date().getFullYear(), //get the current year
@@ -68,23 +75,21 @@ function renderCalendar() {
 
   elements.currentMonthYear.textContent = `${months[state.selectedMonth]} ${state.selectedYear}`;
 
-  // Get the weekday of the first day of the selected month
-  const firstDay = new Date(
+    // Get the weekday of the first day of the selected month
+  const firstDay = getFirstDay(
     state.selectedYear,
     state.selectedMonth,
-    1,
-  ).getDay();
+  );
 
   // Get the total number of days in the selected month
-  const daysInMonth = new Date(
+  const daysInMonth = getDaysInMonth(
     state.selectedYear,
-    state.selectedMonth + 1,
-    0,
-  ).getDate();
+    state.selectedMonth,
+  );
 
   elements.calendarBody.replaceChildren();
 
-  const numberOfWeeks = Math.ceil((firstDay + daysInMonth) / 7);
+  const numberOfWeeks = getNumberOfWeeks(firstDay, daysInMonth);
 
   for (let week = 0; week < numberOfWeeks; week++) {
     const row = document.createElement("tr");

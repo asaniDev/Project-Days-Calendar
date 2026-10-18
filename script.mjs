@@ -1,16 +1,3 @@
-// This is a placeholder file which shows how you can access functions and data defined in other files.
-// It can be loaded into index.html.
-// Note that when running locally, in order to open a web page which uses modules, you must serve the directory over HTTP e.g. with https://www.npmjs.com/package/http-server
-// You can't open the index.html file using a file:// URL.
-
-/*import { getGreeting } from "./common.mjs";
-import daysData from "./days.json" with { type: "json" };
-
-window.onload = function () {
-  document.querySelector("body").innerText =
-    `${getGreeting()} - there are ${daysData.length} known days`;
-};*/
-
 const state = {
   selectedMonth: new Date().getMonth(), //get the current month
   selectedYear: new Date().getFullYear(), //get the current year
@@ -38,12 +25,16 @@ window.onload = function () {
   elements.yearSelect = document.getElementById("year-select");
   elements.calendarBody = document.getElementById("calendar-body");
   elements.currentMonthYear = document.getElementById("current-month-year");
+  elements.previousMonthBtn = document.getElementById("previous-month");
+  elements.nextMonthBtn = document.getElementById("next-month");
 
   populateMonthOptions();
   populateYearOptions();
 
   elements.monthSelect.addEventListener("change", handleMonthChange);
   elements.yearSelect.addEventListener("change", handleYearChange);
+  elements.previousMonthBtn.addEventListener("click", handleDecrementMonth);
+  elements.nextMonthBtn.addEventListener("click", handleIncrementMonth);
 
   renderCalendar();
 };
@@ -123,4 +114,30 @@ function handleMonthChange() {
 function handleYearChange() {
   state.selectedYear = Number(elements.yearSelect.value);
   renderCalendar();
+}
+
+//Decreasing the month when previous button clicked
+function handleDecrementMonth() {
+  if (state.selectedMonth > 0) {
+    console.log(state.selectedMonth);
+    state.selectedMonth -= 1;
+    renderCalendar();
+  } else {
+    console.log(state.selectedMonth);
+    state.selectedMonth = 11;
+    state.selectedYear -= 1;
+    renderCalendar();
+  }
+}
+
+//incrementing the month when next button clicked
+function handleIncrementMonth() {
+  if (state.selectedMonth < 11) {
+    state.selectedMonth += 1;
+    renderCalendar();
+  } else {
+    state.selectedMonth = 0;
+    state.selectedYear += 1;
+    renderCalendar();
+  }
 }

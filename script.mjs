@@ -1,9 +1,8 @@
-import daysData from "./days.json" with { type: "json" };
-
 import {
   getFirstDay,
   getDaysInMonth,
   getNumberOfWeeks,
+  getEvent,
 } from "./common.mjs";
 
 const state = {
@@ -28,24 +27,26 @@ const months = [
   "December",
 ];
 
-window.onload = function () {
-  elements.monthSelect = document.getElementById("month-select");
-  elements.yearSelect = document.getElementById("year-select");
-  elements.calendarBody = document.getElementById("calendar-body");
-  elements.currentMonthYear = document.getElementById("current-month-year");
-  elements.previousMonthBtn = document.getElementById("previous-month");
-  elements.nextMonthBtn = document.getElementById("next-month");
+if (typeof window !== "undefined") {
+  window.onload = function () {
+    elements.monthSelect = document.getElementById("month-select");
+    elements.yearSelect = document.getElementById("year-select");
+    elements.calendarBody = document.getElementById("calendar-body");
+    elements.currentMonthYear = document.getElementById("current-month-year");
+    elements.previousMonthBtn = document.getElementById("previous-month");
+    elements.nextMonthBtn = document.getElementById("next-month");
 
-  populateMonthOptions();
-  populateYearOptions();
+    populateMonthOptions();
+    populateYearOptions();
 
-  elements.monthSelect.addEventListener("change", handleMonthChange);
-  elements.yearSelect.addEventListener("change", handleYearChange);
-  elements.previousMonthBtn.addEventListener("click", handleDecrementMonth);
-  elements.nextMonthBtn.addEventListener("click", handleIncrementMonth);
+    elements.monthSelect.addEventListener("change", handleMonthChange);
+    elements.yearSelect.addEventListener("change", handleYearChange);
+    elements.previousMonthBtn.addEventListener("click", handleDecrementMonth);
+    elements.nextMonthBtn.addEventListener("click", handleIncrementMonth);
 
-  renderCalendar();
-};
+    renderCalendar();
+  };
+}
 
 // Add month options to the Month dropdown
 function populateMonthOptions() {
@@ -76,17 +77,11 @@ function renderCalendar() {
 
   elements.currentMonthYear.textContent = `${months[state.selectedMonth]} ${state.selectedYear}`;
 
-    // Get the weekday of the first day of the selected month
-  const firstDay = getFirstDay(
-    state.selectedYear,
-    state.selectedMonth,
-  );
+  // Get the weekday of the first day of the selected month
+  const firstDay = getFirstDay(state.selectedYear, state.selectedMonth);
 
   // Get the total number of days in the selected month
-  const daysInMonth = getDaysInMonth(
-    state.selectedYear,
-    state.selectedMonth,
-  );
+  const daysInMonth = getDaysInMonth(state.selectedYear, state.selectedMonth);
 
   elements.calendarBody.replaceChildren();
 
@@ -111,7 +106,7 @@ function renderCalendar() {
     elements.calendarBody.appendChild(row);
   }
 
-  getEvent();
+  getEvent(months, state.selectedMonth, state.selectedYear, elements);
 }
 
 // Update the selected month and redraw the calendar
@@ -150,93 +145,8 @@ function handleIncrementMonth() {
   }
 }
 
-//getting events that match the current month
-function getEvent() {
-  const currentMonth = months[state.selectedMonth];
-
-  //get any events that happen in the current month
-  const matchingEvents = daysData.filter(
-    (event) => event.monthName === currentMonth,
-  );
-
-  //get the instances of weekdays for found event/s
-  if (matchingEvents.length !== 0) {
-    matchingEvents.forEach((event) => {
-      const nameOfDay = event.dayName;
-      console.log("This event falls on a: ", nameOfDay);
-
-      const occurrenceIndexes = {
-        first: 0,
-        second: 1,
-        third: 2,
-        fourth: 3,
-        last: -1,
-      };
-
-      const weekdayArray = getWeekdays(event.dayName).noOfWeekdays;
-      const index = occurrenceIndexes[event.occurrence];
-
-      const occurrence =
-        index === -1 ? weekdayArray.at(-1) : weekdayArray[index];
-
-      if (!occurrence) {
-        return;
-      }
-
-      const targetDate = formatDate(occurrence);
-      const cell = elements.calendarBody.querySelector(
-        `td[data-date="${targetDate}"]`,
-      );
-
-      if (cell) {
-        const currentEvent = document.createElement("p");
-        currentEvent.textContent = event.name;
-        currentEvent.classList.add("calendar-event");
-        cell.appendChild(currentEvent);
-      }
-    });
-  }
-}
-
-//calculating the number of times a weekday happens in a given month
-function getWeekdays(dayName) {
-  let currentDate = new Date(state.selectedYear, state.selectedMonth),
-    month = state.selectedMonth,
-    weekday = 0,
-    weekdays = [];
-
-  //we convert the dayName to numerical value
-  const daysOfWeek = new Map([
-    ["Sunday", 0],
-    ["Monday", 1],
-    ["Tuesday", 2],
-    ["Wednesday", 3],
-    ["Thursday", 4],
-    ["Friday", 5],
-    ["Saturday", 6],
-  ]);
-
-  for (let day of daysOfWeek.keys()) {
-    if (day === dayName) {
-      weekday = daysOfWeek.get(day);
-    }
-  }
-
-  // Get the first dayName instance in the month
-  while (currentDate.getDay() !== weekday) {
-    currentDate.setDate(currentDate.getDate() + 1);
-  }
-
-  // Get all the other instances of the day in the month
-  while (currentDate.getMonth() === month) {
-    weekdays.push(new Date(currentDate.getTime()));
-    currentDate.setDate(currentDate.getDate() + 7);
-  }
-  return { noOfWeekdays: weekdays, valueOfDayName: weekday };
-}
-
 //function to add a data date attribute to each cell
-function formatDate(date) {
+export function formatDate(date) {
   const currentDate =
     date instanceof Date
       ? date

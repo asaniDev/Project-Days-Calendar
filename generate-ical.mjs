@@ -32,3 +32,37 @@ function formatIcsDate(date) {
 
   return `${year}${month}${day}`;
 }
+console.log(`{getGreeting()} - there are ${daysData.length} known days`);*/
+
+import fs from "node:fs";
+import daysData from "./days.json" with { type: "json" };
+
+let icsContent = [
+  "BEGIN:VCALENDAR",
+  "VERSION:2.0",
+  "PRODID:-//Days Calendar//EN",
+    "",
+];
+
+
+for (let year = 2020; year <= 2030; year++) {
+  for (const event of daysData) {
+    icsContent.push(
+      "BEGIN:VEVENT",
+      `UID:${event.name.toLowerCase().replaceAll(" ", "-")}-${year}`,
+      `SUMMARY:${event.name}`,
+      `DESCRIPTION:${event.descriptionURL}`,
+      "END:VEVENT",
+      "",
+    );
+  }
+}
+
+icsContent.push("END:VCALENDAR");
+
+fs.writeFileSync(
+  "days.ics",
+  icsContent.join("\r\n") + "\r\n",
+);
+
+console.log("days.ics created");

@@ -3,6 +3,7 @@ import {
   getDaysInMonth,
   getNumberOfWeeks,
   getEvent,
+  formatDate,
 } from "./common.mjs";
 
 const state = {
@@ -71,7 +72,23 @@ function populateYearOptions() {
   }
 }
 
+// Add the year to the dropdown if it does not already exist.
+function addYearOptionIfMissing(year) {
+  const exists = Array.from(elements.yearSelect.options).some(
+    (option) => Number(option.value) === year,
+  );
+
+  if (!exists) {
+    const option = document.createElement("option");
+    option.value = year;
+    option.textContent = year;
+    elements.yearSelect.appendChild(option);
+  }
+}
+
 function renderCalendar() {
+  addYearOptionIfMissing(state.selectedYear);
+
   elements.monthSelect.value = state.selectedMonth;
   elements.yearSelect.value = state.selectedYear;
 
@@ -97,7 +114,9 @@ function renderCalendar() {
       if (date > 0 && date <= daysInMonth) {
         cell.textContent = date;
         //adding data date attribute to help select a specific cell
-        cell.dataset.date = formatDate(date);
+        cell.dataset.date = formatDate(
+          new Date(state.selectedYear, state.selectedMonth, date),
+        );
       }
 
       row.appendChild(cell);
@@ -143,17 +162,4 @@ function handleIncrementMonth() {
     state.selectedYear += 1;
     renderCalendar();
   }
-}
-
-//function to add a data date attribute to each cell
-export function formatDate(date) {
-  const currentDate =
-    date instanceof Date
-      ? date
-      : new Date(state.selectedYear, state.selectedMonth, date);
-  const year = currentDate.getFullYear();
-  const month = String(currentDate.getMonth() + 1).padStart(2, "0");
-  const day = String(currentDate.getDate()).padStart(2, "0");
-
-  return `${year}-${month}-${day}`;
 }

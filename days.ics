@@ -4,330 +4,385 @@ PRODID:-//Days Calendar//EN
 
 BEGIN:VEVENT
 UID:ada-lovelace-day-2020
+DTSTART;VALUE=DATE:20201013
 SUMMARY:Ada Lovelace Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/ada.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-binturong-day-2020
+DTSTART;VALUE=DATE:20200509
 SUMMARY:International Binturong Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/binturongs.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-vulture-awareness-day-2020
+DTSTART;VALUE=DATE:20200905
 SUMMARY:International Vulture Awareness Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/vultures.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-red-panda-day-2020
+DTSTART;VALUE=DATE:20200919
 SUMMARY:International Red Panda Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/red-pandas.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:world-lemur-day-2020
+DTSTART;VALUE=DATE:20201030
 SUMMARY:World Lemur Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/lemurs.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:ada-lovelace-day-2021
+DTSTART;VALUE=DATE:20211012
 SUMMARY:Ada Lovelace Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/ada.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-binturong-day-2021
+DTSTART;VALUE=DATE:20210508
 SUMMARY:International Binturong Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/binturongs.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-vulture-awareness-day-2021
+DTSTART;VALUE=DATE:20210904
 SUMMARY:International Vulture Awareness Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/vultures.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-red-panda-day-2021
+DTSTART;VALUE=DATE:20210918
 SUMMARY:International Red Panda Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/red-pandas.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:world-lemur-day-2021
+DTSTART;VALUE=DATE:20211029
 SUMMARY:World Lemur Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/lemurs.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:ada-lovelace-day-2022
+DTSTART;VALUE=DATE:20221011
 SUMMARY:Ada Lovelace Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/ada.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-binturong-day-2022
+DTSTART;VALUE=DATE:20220514
 SUMMARY:International Binturong Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/binturongs.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-vulture-awareness-day-2022
+DTSTART;VALUE=DATE:20220903
 SUMMARY:International Vulture Awareness Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/vultures.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-red-panda-day-2022
+DTSTART;VALUE=DATE:20220917
 SUMMARY:International Red Panda Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/red-pandas.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:world-lemur-day-2022
+DTSTART;VALUE=DATE:20221028
 SUMMARY:World Lemur Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/lemurs.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:ada-lovelace-day-2023
+DTSTART;VALUE=DATE:20231010
 SUMMARY:Ada Lovelace Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/ada.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-binturong-day-2023
+DTSTART;VALUE=DATE:20230513
 SUMMARY:International Binturong Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/binturongs.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-vulture-awareness-day-2023
+DTSTART;VALUE=DATE:20230902
 SUMMARY:International Vulture Awareness Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/vultures.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-red-panda-day-2023
+DTSTART;VALUE=DATE:20230916
 SUMMARY:International Red Panda Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/red-pandas.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:world-lemur-day-2023
+DTSTART;VALUE=DATE:20231027
 SUMMARY:World Lemur Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/lemurs.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:ada-lovelace-day-2024
+DTSTART;VALUE=DATE:20241008
 SUMMARY:Ada Lovelace Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/ada.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-binturong-day-2024
+DTSTART;VALUE=DATE:20240511
 SUMMARY:International Binturong Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/binturongs.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-vulture-awareness-day-2024
+DTSTART;VALUE=DATE:20240907
 SUMMARY:International Vulture Awareness Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/vultures.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-red-panda-day-2024
+DTSTART;VALUE=DATE:20240921
 SUMMARY:International Red Panda Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/red-pandas.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:world-lemur-day-2024
+DTSTART;VALUE=DATE:20241025
 SUMMARY:World Lemur Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/lemurs.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:ada-lovelace-day-2025
+DTSTART;VALUE=DATE:20251014
 SUMMARY:Ada Lovelace Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/ada.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-binturong-day-2025
+DTSTART;VALUE=DATE:20250510
 SUMMARY:International Binturong Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/binturongs.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-vulture-awareness-day-2025
+DTSTART;VALUE=DATE:20250906
 SUMMARY:International Vulture Awareness Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/vultures.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-red-panda-day-2025
+DTSTART;VALUE=DATE:20250920
 SUMMARY:International Red Panda Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/red-pandas.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:world-lemur-day-2025
+DTSTART;VALUE=DATE:20251031
 SUMMARY:World Lemur Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/lemurs.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:ada-lovelace-day-2026
+DTSTART;VALUE=DATE:20261013
 SUMMARY:Ada Lovelace Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/ada.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-binturong-day-2026
+DTSTART;VALUE=DATE:20260509
 SUMMARY:International Binturong Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/binturongs.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-vulture-awareness-day-2026
+DTSTART;VALUE=DATE:20260905
 SUMMARY:International Vulture Awareness Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/vultures.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-red-panda-day-2026
+DTSTART;VALUE=DATE:20260919
 SUMMARY:International Red Panda Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/red-pandas.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:world-lemur-day-2026
+DTSTART;VALUE=DATE:20261030
 SUMMARY:World Lemur Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/lemurs.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:ada-lovelace-day-2027
+DTSTART;VALUE=DATE:20271012
 SUMMARY:Ada Lovelace Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/ada.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-binturong-day-2027
+DTSTART;VALUE=DATE:20270508
 SUMMARY:International Binturong Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/binturongs.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-vulture-awareness-day-2027
+DTSTART;VALUE=DATE:20270904
 SUMMARY:International Vulture Awareness Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/vultures.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-red-panda-day-2027
+DTSTART;VALUE=DATE:20270918
 SUMMARY:International Red Panda Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/red-pandas.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:world-lemur-day-2027
+DTSTART;VALUE=DATE:20271029
 SUMMARY:World Lemur Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/lemurs.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:ada-lovelace-day-2028
+DTSTART;VALUE=DATE:20281010
 SUMMARY:Ada Lovelace Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/ada.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-binturong-day-2028
+DTSTART;VALUE=DATE:20280513
 SUMMARY:International Binturong Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/binturongs.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-vulture-awareness-day-2028
+DTSTART;VALUE=DATE:20280902
 SUMMARY:International Vulture Awareness Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/vultures.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-red-panda-day-2028
+DTSTART;VALUE=DATE:20280916
 SUMMARY:International Red Panda Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/red-pandas.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:world-lemur-day-2028
+DTSTART;VALUE=DATE:20281027
 SUMMARY:World Lemur Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/lemurs.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:ada-lovelace-day-2029
+DTSTART;VALUE=DATE:20291009
 SUMMARY:Ada Lovelace Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/ada.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-binturong-day-2029
+DTSTART;VALUE=DATE:20290512
 SUMMARY:International Binturong Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/binturongs.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-vulture-awareness-day-2029
+DTSTART;VALUE=DATE:20290901
 SUMMARY:International Vulture Awareness Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/vultures.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-red-panda-day-2029
+DTSTART;VALUE=DATE:20290915
 SUMMARY:International Red Panda Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/red-pandas.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:world-lemur-day-2029
+DTSTART;VALUE=DATE:20291026
 SUMMARY:World Lemur Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/lemurs.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:ada-lovelace-day-2030
+DTSTART;VALUE=DATE:20301008
 SUMMARY:Ada Lovelace Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/ada.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-binturong-day-2030
+DTSTART;VALUE=DATE:20300511
 SUMMARY:International Binturong Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/binturongs.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-vulture-awareness-day-2030
+DTSTART;VALUE=DATE:20300907
 SUMMARY:International Vulture Awareness Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/vultures.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:international-red-panda-day-2030
+DTSTART;VALUE=DATE:20300921
 SUMMARY:International Red Panda Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/red-pandas.txt
 END:VEVENT
 
 BEGIN:VEVENT
 UID:world-lemur-day-2030
+DTSTART;VALUE=DATE:20301025
 SUMMARY:World Lemur Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/lemurs.txt
 END:VEVENT

@@ -1,8 +1,7 @@
 import { describe, expect, test } from "vitest";
 
-import { formatDate } from "./common.mjs";
-
 import {
+  formatDate,
   getFirstDay,
   getDaysInMonth,
   getNumberOfWeeks,
@@ -18,13 +17,19 @@ test("getDaysInMonth returns the correct number of days", () => {
   expect(getDaysInMonth(2025, 1)).toBe(28);
 });
 
-test("getNumberOfWeeks returns the correct number of weeks", () => {
-  expect(getNumberOfWeeks(0, 30)).toBe(5);
-});
-
 test("getFirstDay returns the correct weekday for January 2025", () => {
   expect(getFirstDay(2025, 0)).toBe(3);
 });
+
+test("getDaysInMonth returns 31 for January", () => {
+  expect(getDaysInMonth(2025, 0)).toBe(31);
+});
+
+test("getNumberOfWeeks returns the correct number of weeks", () => {
+  expect(getNumberOfWeeks(0, 30)).toBe(5);
+  expect(getNumberOfWeeks(6, 31)).toBe(6);
+});
+
 
 describe("getWeekdays", () => {
   test("returns every Monday in February 2024", () => {

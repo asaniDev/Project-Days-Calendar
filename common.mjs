@@ -1,7 +1,5 @@
 import daysData from "./days.json" with { type: "json" };
 
-import { formatDate } from "./script.mjs";
-
 export function getFirstDay(year, month) {
   return new Date(year, month, 1).getDay();
 }
@@ -26,7 +24,6 @@ export function getEvent(months, selectedMonth, selectedYear, tableElements) {
   //get the instances of weekdays for found event/s
   if (matchingEvents.length !== 0) {
     matchingEvents.forEach((event) => {
-      const nameOfDay = event.dayName;
 
       const occurrenceIndexes = {
         first: 0,
@@ -106,4 +103,15 @@ export function getWeekdays(dayName, currentYear, currentMonth) {
     currentDate.setDate(currentDate.getDate() + 7);
   }
   return { noOfWeekdays: weekdays, valueOfDayName: weekday };
+}
+
+// Format a date as YYYY-MM-DD
+export function formatDate(date) {
+  const currentDate = date instanceof Date ? date : new Date(date);
+
+  const year = currentDate.getFullYear();
+  const month = String(currentDate.getMonth() + 1).padStart(2, "0");
+  const day = String(currentDate.getDate()).padStart(2, "0");
+
+  return `${year}-${month}-${day}`;
 }

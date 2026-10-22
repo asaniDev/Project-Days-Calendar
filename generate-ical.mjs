@@ -1,9 +1,41 @@
+
+import fs from "node:fs";
+
 import daysData from "./days.json" with { type: "json" };
 
-import { getWeekdays } from "./script.mjs";
-//step 1 read the json file
-function getDate(year, month, day, occurrence) {
-  const eventDay = getWeekdays(day, year, month);
+import { getWeekdays } from "./common.mjs";
+
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
+// Format a date as YYYYMMDD for iCalendar
+function formatIcsDate(date) {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+
+  return `${year}${month}${day}`;
+}
+
+// Calculate the date using the shared function in common.mjs
+function getDate(year, month, dayName, occurrence) {
+  const weekdayArray = getWeekdays(
+    dayName,
+    year,
+    month,
+  ).noOfWeekdays;
 
   const occurrenceIndexes = {
     first: 0,
@@ -15,41 +47,50 @@ function getDate(year, month, day, occurrence) {
 
   const index = occurrenceIndexes[occurrence];
 
+  if (index === undefined) {
+    throw new Error(`Unknown occurrence: ${occurrence}`);
+  }
+
   const occurrenceDate =
-    index === -1 ? weekdayArray.at(-1) : weekdayArray[index];
+    index === -1
+      ? weekdayArray.at(-1)
+      : weekdayArray[index];
+
+  if (!occurrenceDate) {
+    throw new Error(
+      `Could not find ${occurrence} ${dayName} in ${months[month]} ${year}`,
+    );
+  }
 
   return formatIcsDate(occurrenceDate);
 }
 
-function formatIcsDate(date) {
-  const currentDate =
-    date instanceof Date
-      ? date
-      : new Date(state.selectedYear, state.selectedMonth, date);
-  const year = currentDate.getFullYear();
-  const month = String(currentDate.getMonth() + 1).padStart(2, "0");
-  const day = String(currentDate.getDate()).padStart(2, "0");
-
-  return `${year}${month}${day}`;
-}
-console.log(`{getGreeting()} - there are ${daysData.length} known days`);*/
-
-import fs from "node:fs";
-import daysData from "./days.json" with { type: "json" };
-
-let icsContent = [
+const icsContent = [
   "BEGIN:VCALENDAR",
   "VERSION:2.0",
   "PRODID:-//Days Calendar//EN",
-    "",
+  "",
 ];
-
 
 for (let year = 2020; year <= 2030; year++) {
   for (const event of daysData) {
+    const month = months.indexOf(event.monthName);
+
+    if (month === -1) {
+      throw new Error(`Unknown month: ${event.monthName}`);
+    }
+
+    const date = getDate(
+      year,
+      month,
+      event.dayName,
+      event.occurrence,
+    );
+
     icsContent.push(
       "BEGIN:VEVENT",
       `UID:${event.name.toLowerCase().replaceAll(" ", "-")}-${year}`,
+      `DTSTART;VALUE=DATE:${date}`,
       `SUMMARY:${event.name}`,
       `DESCRIPTION:${event.descriptionURL}`,
       "END:VEVENT",

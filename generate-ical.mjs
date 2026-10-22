@@ -3,22 +3,8 @@ import fs from "node:fs";
 
 import daysData from "./days.json" with { type: "json" };
 
-import { getWeekdays } from "./common.mjs";
+import { months,getWeekdays } from "./common.mjs";
 
-const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
 
 // Format a date as YYYYMMDD for iCalendar
 function formatIcsDate(date) {

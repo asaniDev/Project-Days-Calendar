@@ -1,5 +1,20 @@
 import daysData from "./days.json" with { type: "json" };
 
+export const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
 export function getFirstDay(year, month) {
   return new Date(year, month, 1).getDay();
 }

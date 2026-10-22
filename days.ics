@@ -5,6 +5,7 @@ PRODID:-//Days Calendar//EN
 BEGIN:VEVENT
 UID:ada-lovelace-day-2020
 DTSTART;VALUE=DATE:20201013
+DTEND;VALUE=DATE:20201014
 SUMMARY:Ada Lovelace Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/ada.txt
 END:VEVENT
@@ -12,6 +13,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-binturong-day-2020
 DTSTART;VALUE=DATE:20200509
+DTEND;VALUE=DATE:20200510
 SUMMARY:International Binturong Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/binturongs.txt
 END:VEVENT
@@ -19,6 +21,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-vulture-awareness-day-2020
 DTSTART;VALUE=DATE:20200905
+DTEND;VALUE=DATE:20200906
 SUMMARY:International Vulture Awareness Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/vultures.txt
 END:VEVENT
@@ -26,6 +29,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-red-panda-day-2020
 DTSTART;VALUE=DATE:20200919
+DTEND;VALUE=DATE:20200920
 SUMMARY:International Red Panda Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/red-pandas.txt
 END:VEVENT
@@ -33,6 +37,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:world-lemur-day-2020
 DTSTART;VALUE=DATE:20201030
+DTEND;VALUE=DATE:20201031
 SUMMARY:World Lemur Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/lemurs.txt
 END:VEVENT
@@ -40,6 +45,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ada-lovelace-day-2021
 DTSTART;VALUE=DATE:20211012
+DTEND;VALUE=DATE:20211013
 SUMMARY:Ada Lovelace Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/ada.txt
 END:VEVENT
@@ -47,6 +53,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-binturong-day-2021
 DTSTART;VALUE=DATE:20210508
+DTEND;VALUE=DATE:20210509
 SUMMARY:International Binturong Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/binturongs.txt
 END:VEVENT
@@ -54,6 +61,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-vulture-awareness-day-2021
 DTSTART;VALUE=DATE:20210904
+DTEND;VALUE=DATE:20210905
 SUMMARY:International Vulture Awareness Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/vultures.txt
 END:VEVENT
@@ -61,6 +69,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-red-panda-day-2021
 DTSTART;VALUE=DATE:20210918
+DTEND;VALUE=DATE:20210919
 SUMMARY:International Red Panda Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/red-pandas.txt
 END:VEVENT
@@ -68,6 +77,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:world-lemur-day-2021
 DTSTART;VALUE=DATE:20211029
+DTEND;VALUE=DATE:20211030
 SUMMARY:World Lemur Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/lemurs.txt
 END:VEVENT
@@ -75,6 +85,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ada-lovelace-day-2022
 DTSTART;VALUE=DATE:20221011
+DTEND;VALUE=DATE:20221012
 SUMMARY:Ada Lovelace Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/ada.txt
 END:VEVENT
@@ -82,6 +93,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-binturong-day-2022
 DTSTART;VALUE=DATE:20220514
+DTEND;VALUE=DATE:20220515
 SUMMARY:International Binturong Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/binturongs.txt
 END:VEVENT
@@ -89,6 +101,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-vulture-awareness-day-2022
 DTSTART;VALUE=DATE:20220903
+DTEND;VALUE=DATE:20220904
 SUMMARY:International Vulture Awareness Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/vultures.txt
 END:VEVENT
@@ -96,6 +109,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-red-panda-day-2022
 DTSTART;VALUE=DATE:20220917
+DTEND;VALUE=DATE:20220918
 SUMMARY:International Red Panda Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/red-pandas.txt
 END:VEVENT
@@ -103,6 +117,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:world-lemur-day-2022
 DTSTART;VALUE=DATE:20221028
+DTEND;VALUE=DATE:20221029
 SUMMARY:World Lemur Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/lemurs.txt
 END:VEVENT
@@ -110,6 +125,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ada-lovelace-day-2023
 DTSTART;VALUE=DATE:20231010
+DTEND;VALUE=DATE:20231011
 SUMMARY:Ada Lovelace Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/ada.txt
 END:VEVENT
@@ -117,6 +133,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-binturong-day-2023
 DTSTART;VALUE=DATE:20230513
+DTEND;VALUE=DATE:20230514
 SUMMARY:International Binturong Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/binturongs.txt
 END:VEVENT
@@ -124,6 +141,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-vulture-awareness-day-2023
 DTSTART;VALUE=DATE:20230902
+DTEND;VALUE=DATE:20230903
 SUMMARY:International Vulture Awareness Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/vultures.txt
 END:VEVENT
@@ -131,6 +149,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-red-panda-day-2023
 DTSTART;VALUE=DATE:20230916
+DTEND;VALUE=DATE:20230917
 SUMMARY:International Red Panda Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/red-pandas.txt
 END:VEVENT
@@ -138,6 +157,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:world-lemur-day-2023
 DTSTART;VALUE=DATE:20231027
+DTEND;VALUE=DATE:20231028
 SUMMARY:World Lemur Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/lemurs.txt
 END:VEVENT
@@ -145,6 +165,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ada-lovelace-day-2024
 DTSTART;VALUE=DATE:20241008
+DTEND;VALUE=DATE:20241009
 SUMMARY:Ada Lovelace Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/ada.txt
 END:VEVENT
@@ -152,6 +173,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-binturong-day-2024
 DTSTART;VALUE=DATE:20240511
+DTEND;VALUE=DATE:20240512
 SUMMARY:International Binturong Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/binturongs.txt
 END:VEVENT
@@ -159,6 +181,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-vulture-awareness-day-2024
 DTSTART;VALUE=DATE:20240907
+DTEND;VALUE=DATE:20240908
 SUMMARY:International Vulture Awareness Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/vultures.txt
 END:VEVENT
@@ -166,6 +189,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-red-panda-day-2024
 DTSTART;VALUE=DATE:20240921
+DTEND;VALUE=DATE:20240922
 SUMMARY:International Red Panda Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/red-pandas.txt
 END:VEVENT
@@ -173,6 +197,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:world-lemur-day-2024
 DTSTART;VALUE=DATE:20241025
+DTEND;VALUE=DATE:20241026
 SUMMARY:World Lemur Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/lemurs.txt
 END:VEVENT
@@ -180,6 +205,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ada-lovelace-day-2025
 DTSTART;VALUE=DATE:20251014
+DTEND;VALUE=DATE:20251015
 SUMMARY:Ada Lovelace Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/ada.txt
 END:VEVENT
@@ -187,6 +213,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-binturong-day-2025
 DTSTART;VALUE=DATE:20250510
+DTEND;VALUE=DATE:20250511
 SUMMARY:International Binturong Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/binturongs.txt
 END:VEVENT
@@ -194,6 +221,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-vulture-awareness-day-2025
 DTSTART;VALUE=DATE:20250906
+DTEND;VALUE=DATE:20250907
 SUMMARY:International Vulture Awareness Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/vultures.txt
 END:VEVENT
@@ -201,6 +229,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-red-panda-day-2025
 DTSTART;VALUE=DATE:20250920
+DTEND;VALUE=DATE:20250921
 SUMMARY:International Red Panda Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/red-pandas.txt
 END:VEVENT
@@ -208,6 +237,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:world-lemur-day-2025
 DTSTART;VALUE=DATE:20251031
+DTEND;VALUE=DATE:20251101
 SUMMARY:World Lemur Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/lemurs.txt
 END:VEVENT
@@ -215,6 +245,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ada-lovelace-day-2026
 DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
 SUMMARY:Ada Lovelace Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/ada.txt
 END:VEVENT
@@ -222,6 +253,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-binturong-day-2026
 DTSTART;VALUE=DATE:20260509
+DTEND;VALUE=DATE:20260510
 SUMMARY:International Binturong Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/binturongs.txt
 END:VEVENT
@@ -229,6 +261,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-vulture-awareness-day-2026
 DTSTART;VALUE=DATE:20260905
+DTEND;VALUE=DATE:20260906
 SUMMARY:International Vulture Awareness Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/vultures.txt
 END:VEVENT
@@ -236,6 +269,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-red-panda-day-2026
 DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260920
 SUMMARY:International Red Panda Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/red-pandas.txt
 END:VEVENT
@@ -243,6 +277,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:world-lemur-day-2026
 DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
 SUMMARY:World Lemur Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/lemurs.txt
 END:VEVENT
@@ -250,6 +285,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ada-lovelace-day-2027
 DTSTART;VALUE=DATE:20271012
+DTEND;VALUE=DATE:20271013
 SUMMARY:Ada Lovelace Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/ada.txt
 END:VEVENT
@@ -257,6 +293,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-binturong-day-2027
 DTSTART;VALUE=DATE:20270508
+DTEND;VALUE=DATE:20270509
 SUMMARY:International Binturong Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/binturongs.txt
 END:VEVENT
@@ -264,6 +301,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-vulture-awareness-day-2027
 DTSTART;VALUE=DATE:20270904
+DTEND;VALUE=DATE:20270905
 SUMMARY:International Vulture Awareness Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/vultures.txt
 END:VEVENT
@@ -271,6 +309,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-red-panda-day-2027
 DTSTART;VALUE=DATE:20270918
+DTEND;VALUE=DATE:20270919
 SUMMARY:International Red Panda Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/red-pandas.txt
 END:VEVENT
@@ -278,6 +317,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:world-lemur-day-2027
 DTSTART;VALUE=DATE:20271029
+DTEND;VALUE=DATE:20271030
 SUMMARY:World Lemur Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/lemurs.txt
 END:VEVENT
@@ -285,6 +325,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ada-lovelace-day-2028
 DTSTART;VALUE=DATE:20281010
+DTEND;VALUE=DATE:20281011
 SUMMARY:Ada Lovelace Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/ada.txt
 END:VEVENT
@@ -292,6 +333,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-binturong-day-2028
 DTSTART;VALUE=DATE:20280513
+DTEND;VALUE=DATE:20280514
 SUMMARY:International Binturong Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/binturongs.txt
 END:VEVENT
@@ -299,6 +341,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-vulture-awareness-day-2028
 DTSTART;VALUE=DATE:20280902
+DTEND;VALUE=DATE:20280903
 SUMMARY:International Vulture Awareness Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/vultures.txt
 END:VEVENT
@@ -306,6 +349,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-red-panda-day-2028
 DTSTART;VALUE=DATE:20280916
+DTEND;VALUE=DATE:20280917
 SUMMARY:International Red Panda Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/red-pandas.txt
 END:VEVENT
@@ -313,6 +357,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:world-lemur-day-2028
 DTSTART;VALUE=DATE:20281027
+DTEND;VALUE=DATE:20281028
 SUMMARY:World Lemur Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/lemurs.txt
 END:VEVENT
@@ -320,6 +365,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ada-lovelace-day-2029
 DTSTART;VALUE=DATE:20291009
+DTEND;VALUE=DATE:20291010
 SUMMARY:Ada Lovelace Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/ada.txt
 END:VEVENT
@@ -327,6 +373,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-binturong-day-2029
 DTSTART;VALUE=DATE:20290512
+DTEND;VALUE=DATE:20290513
 SUMMARY:International Binturong Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/binturongs.txt
 END:VEVENT
@@ -334,6 +381,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-vulture-awareness-day-2029
 DTSTART;VALUE=DATE:20290901
+DTEND;VALUE=DATE:20290902
 SUMMARY:International Vulture Awareness Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/vultures.txt
 END:VEVENT
@@ -341,6 +389,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-red-panda-day-2029
 DTSTART;VALUE=DATE:20290915
+DTEND;VALUE=DATE:20290916
 SUMMARY:International Red Panda Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/red-pandas.txt
 END:VEVENT
@@ -348,6 +397,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:world-lemur-day-2029
 DTSTART;VALUE=DATE:20291026
+DTEND;VALUE=DATE:20291027
 SUMMARY:World Lemur Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/lemurs.txt
 END:VEVENT
@@ -355,6 +405,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ada-lovelace-day-2030
 DTSTART;VALUE=DATE:20301008
+DTEND;VALUE=DATE:20301009
 SUMMARY:Ada Lovelace Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/ada.txt
 END:VEVENT
@@ -362,6 +413,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-binturong-day-2030
 DTSTART;VALUE=DATE:20300511
+DTEND;VALUE=DATE:20300512
 SUMMARY:International Binturong Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/binturongs.txt
 END:VEVENT
@@ -369,6 +421,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-vulture-awareness-day-2030
 DTSTART;VALUE=DATE:20300907
+DTEND;VALUE=DATE:20300908
 SUMMARY:International Vulture Awareness Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/vultures.txt
 END:VEVENT
@@ -376,6 +429,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:international-red-panda-day-2030
 DTSTART;VALUE=DATE:20300921
+DTEND;VALUE=DATE:20300922
 SUMMARY:International Red Panda Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/red-pandas.txt
 END:VEVENT
@@ -383,6 +437,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:world-lemur-day-2030
 DTSTART;VALUE=DATE:20301025
+DTEND;VALUE=DATE:20301026
 SUMMARY:World Lemur Day
 DESCRIPTION:https://codeyourfuture.github.io/Checkpoint/days/lemurs.txt
 END:VEVENT

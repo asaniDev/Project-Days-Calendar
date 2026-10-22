@@ -15,6 +15,15 @@ function formatIcsDate(date) {
   return `${year}${month}${day}`;
 }
 
+function getNextDay(icsDate) {
+const year = Number(icsDate.slice(0, 4));
+const month = Number(icsDate.slice(4, 6)) - 1;
+const day = Number(icsDate.slice(6, 8));
+const nextDay = new Date(year, month, day + 1);
+
+return formatIcsDate(nextDay);
+}
+
 // Calculate the date using the shared function in common.mjs
 function getDate(year, month, dayName, occurrence) {
   const weekdayArray = getWeekdays(
@@ -77,6 +86,7 @@ for (let year = 2020; year <= 2030; year++) {
       "BEGIN:VEVENT",
       `UID:${event.name.toLowerCase().replaceAll(" ", "-")}-${year}`,
       `DTSTART;VALUE=DATE:${date}`,
+      `DTEND;VALUE=DATE:${getNextDay(date)}`,
       `SUMMARY:${event.name}`,
       `DESCRIPTION:${event.descriptionURL}`,
       "END:VEVENT",

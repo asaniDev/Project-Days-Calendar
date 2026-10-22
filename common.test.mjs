@@ -1,6 +1,6 @@
 import { describe, expect, test } from "vitest";
 
-import { formatDate } from "./script.mjs";
+import { formatDate } from "./common.mjs";
 
 import {
   getFirstDay,

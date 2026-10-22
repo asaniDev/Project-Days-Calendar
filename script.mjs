@@ -1,9 +1,11 @@
+import daysData from "./days.json" with { type: "json" };
+
 import {
   months,
   getFirstDay,
   getDaysInMonth,
   getNumberOfWeeks,
-  getEvent,
+  getWeekdays,
   formatDate,
 } from "./common.mjs";
 
@@ -112,7 +114,59 @@ function renderCalendar() {
     elements.calendarBody.appendChild(row);
   }
 
-  getEvent(months, state.selectedMonth, state.selectedYear, elements);
+  getEvent(state.selectedMonth, state.selectedYear);
+}
+
+
+//getting events that match the current month
+function getEvent(selectedMonth, selectedYear) {
+  const currentMonth = months[selectedMonth];
+
+  //get any events that happen in the current month
+  const matchingEvents = daysData.filter(
+    (event) => event.monthName === currentMonth,
+  );
+
+  //get the instances of weekdays for found event/s
+  if (matchingEvents.length !== 0) {
+    matchingEvents.forEach((event) => {
+
+      const occurrenceIndexes = {
+        first: 0,
+        second: 1,
+        third: 2,
+        fourth: 3,
+        last: -1,
+      };
+
+      const weekdayArray = getWeekdays(
+        event.dayName,
+        selectedYear,
+        selectedMonth,
+      ).noOfWeekdays;
+      const index = occurrenceIndexes[event.occurrence];
+
+      const occurrence =
+        index === -1 ? weekdayArray.at(-1) : weekdayArray[index];
+
+      if (!occurrence) {
+        return;
+      }
+
+      const targetDate = formatDate(occurrence);
+
+        const cell = elements.calendarBody.querySelector(
+      `td[data-date="${targetDate}"]`,
+    );
+
+      if (cell) {
+        const currentEvent = document.createElement("p");
+        currentEvent.textContent = event.name;
+        currentEvent.classList.add("calendar-event");
+        cell.appendChild(currentEvent);
+      }
+    });
+  }
 }
 
 // Update the selected month and redraw the calendar
@@ -139,7 +193,7 @@ function handleDecrementMonth() {
   }
 }
 
-//incrementing the month when next button clicked
+// Increment the month when the Next button is clicked.
 function handleIncrementMonth() {
   if (state.selectedMonth < 11) {
     state.selectedMonth += 1;

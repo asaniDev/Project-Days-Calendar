@@ -1,4 +1,5 @@
 import {
+  months,
   getFirstDay,
   getDaysInMonth,
   getNumberOfWeeks,
@@ -13,20 +14,6 @@ const state = {
 
 const elements = {};
 
-const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
 
 if (typeof window !== "undefined") {
   window.onload = function () {
